@@ -1,0 +1,52 @@
+.bg-pattern {
+  background: linear-gradient(
+      135deg,
+      var(--vex-background-background) 22px,
+      var(--vex-background-hover) 22px,
+      var(--vex-background-hover) 24px,
+      transparent 24px,
+      transparent 67px,
+      var(--vex-background-hover) 67px,
+      var(--vex-background-hover) 69px,
+      transparent 69px
+  ),
+  linear-gradient(
+      225deg,
+      var(--vex-background-background) 22px,
+      var(--vex-background-hover) 22px,
+      var(--vex-background-hover) 24px,
+      transparent 24px,
+      transparent 67px,
+      var(--vex-background-hover) 67px,
+      var(--vex-background-hover) 69px,
+      transparent 69px
+  ) 0 64px;
+  background-color: var(--vex-background-background);
+  background-size: 64px 128px;
+}
+
+.logo {
+  width: 11rem;
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 1.25rem;
+  /* Adjust size as needed */
+  height: 1.25rem;
+  /* Adjust size as needed */
+  vertical-align: text-bottom;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  /* Spinner border color */
+  border-radius: 50%;
+  border-top-color: #fff;
+  /* Spinner color */
+  animation: spinner-border 0.75s linear infinite;
+}
+
+/* Animation for the spinner */
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
